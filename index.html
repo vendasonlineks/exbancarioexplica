@@ -1,61 +1,155 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Ex-Bancário Explica</title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f4f6f9;
+font-family:Arial, Helvetica, sans-serif;
+background:#f5f7fa;
+color:#333;
 }
 
 header{
-    background:#003366;
-    color:white;
-    padding:30px;
-    text-align:center;
+background:linear-gradient(135deg,#003366,#0055aa);
+color:white;
+padding:50px 20px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.3);
+}
+
+header h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:18px;
 }
 
 nav{
-    background:#0055aa;
-    padding:15px;
-    text-align:center;
+background:#004080;
+padding:20px;
+text-align:center;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:15px;
-    font-weight:bold;
+.btn3d{
+display:inline-block;
+margin:8px;
+padding:14px 22px;
+background:linear-gradient(#1e90ff,#0055aa);
+color:white;
+text-decoration:none;
+font-weight:bold;
+border-radius:12px;
+box-shadow:
+0 6px 0 #003366,
+0 10px 20px rgba(0,0,0,0.25);
+transition:0.2s;
+}
+
+.btn3d:hover{
+transform:translateY(-2px);
+}
+
+.btn3d:active{
+transform:translateY(4px);
+box-shadow:
+0 2px 0 #003366;
+}
+
+.hero{
+text-align:center;
+padding:60px 20px;
+background:white;
+}
+
+.hero h2{
+font-size:36px;
+color:#003366;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:900px;
+margin:auto;
+font-size:18px;
+line-height:1.6;
 }
 
 .container{
-    max-width:1100px;
-    margin:auto;
-    padding:20px;
+max-width:1200px;
+margin:auto;
+padding:40px 20px;
+}
+
+.titulo{
+text-align:center;
+font-size:32px;
+margin-bottom:30px;
+color:#003366;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
 }
 
 .card{
-    background:white;
-    padding:20px;
-    margin-bottom:20px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
 }
 
-.card h2{
-    color:#003366;
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card h3{
+color:#003366;
+margin-bottom:10px;
+}
+
+.card p{
+line-height:1.5;
+margin-bottom:18px;
+}
+
+.botao{
+display:inline-block;
+background:#0055aa;
+color:white;
+padding:10px 15px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.botao:hover{
+background:#003366;
 }
 
 footer{
-    background:#003366;
-    color:white;
-    text-align:center;
-    padding:20px;
+background:#003366;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:50px;
 }
 
 </style>
@@ -65,42 +159,49 @@ footer{
 <body>
 
 <header>
-<h1>Ex-Bancário Explica</h1>
-<p>Finanças sem complicação para quem deseja organizar melhor o dinheiro.</p>
+
+<h1>💰 Ex-Bancário Explica</h1>
+
+<p>
+Finanças sem complicação para quem deseja organizar o dinheiro,
+sair das dívidas e construir patrimônio.
+</p>
+
 </header>
 
 <nav>
-#Início</a>
-<a href="#">Crédito</a>
->
-<a hrefimentos</a>
-<a href="#">Contato</a>iv class="container">
+
+#🏠 Início</a>
+
+#💳 Crédito</a>
+
+#📈 Investimentos</a>
+
+#📉 Dívidas</a>
+
+#📞 Contato</a>
+
+</nav>
+
+<section class="hero">
+
+<h2>Aprenda Como os Bancos Pensam</h2>
+
+<p>
+Conteúdo criado por quem conhece o sistema bancário por dentro.
+Aprenda sobre score, empréstimos, investimentos, cartões de crédito,
+organização financeira e renda extra.
+</p>
+
+</section>
+
+<div class="container">
+
+<h2 class="titulo">Artigos em Destaque</h2>
+
+<div class="cards">
 
 <div class="card">
-<h2>O que é Score de Crédito?</h2>
-<p>Entenda como os bancos analisam seu perfil financeiro.</p>
-</div>
-
-<div class="card">
-<h2>Como Aumentar o Score?</h2>
-<p>Passos simples para melhorar sua credibilidade financeira.</p>
-</div>
-
-<div class="card">
-<h2>Como Sair das Dívidas?</h2>
-<p>Estratégias práticas para recuperar o controle do orçamento.</p>
-</div>
-
-<div class="card">
-<h2>Reserva de Emergência</h2>
-<p>Aprenda a construir sua segurança financeira.</p>
-</div>
-
-</div>
-
-<footer>
-© Ex-Bancário Explica
-</footer>
-
-</body>
-</html>
+<h3>O que é Score de Crédito?</h3>
+<p>Entenda como funciona a pontuação usada pelas instituições financeiras.</p>
+#Ler Artigo</a>
